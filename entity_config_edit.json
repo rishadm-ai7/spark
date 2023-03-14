@@ -1,0 +1,1896 @@
+{
+    "entityDetails": {
+        "entityName": "input",
+        "entityType": "snapshot",
+        "sourceType": "filesystem",
+        "dataFormat": "csv",
+        "dataFormatOption": [
+            {
+                "key": "header",
+                "value": "true"
+            },
+            {
+                "key": "quote",
+                "value": "\""
+            },
+            {
+                "key": "escape",
+                "value": "\""
+            },
+            {
+                "key": "multiline",
+                "value": "true"
+            }
+        ],
+        "extractionType": "batch",
+        "loadLatest": "true",
+        "fileSystem": "s3",
+        "pathUrl": "s3a://vivrti-poc/landing/lentra-poc",
+        "partitionDetails": {
+            "partitionColumn": [
+                "date"
+            ],
+            "partitionType": "daily",
+            "partitionFormat": [
+                "yyyy-MM-dd"
+            ],
+            "numberOfPartitions": 1
+        },
+        "primaryColumns": [
+            "_id"
+        ]
+    },
+    "targetSchema": [
+        {
+        "columnName": "_class",
+        "dataType": "String"
+        },
+        {
+            "columnName": "_id",
+            "dataType": "String"
+        },
+        {
+            "columnName": "active",
+            "dataType": "String"
+        },
+        {
+            "columnName": "age",
+            "dataType": "String"
+        },
+        {
+            "columnName": "applicantname_completename",
+            "dataType": "String"
+        },
+        {
+            "columnName": "applicantname_firstname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "applicantname_lastname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "applicantname_middlename",
+            "dataType": "String"
+        },
+        {
+            "columnName": "applicantname_prefix",
+            "dataType": "String"
+        },
+        {
+            "columnName": "applicantname_suffix",
+            "dataType": "String"
+        },
+        {
+            "columnName": "applicanttype",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_businessname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_businessvintage",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_commencementdateofbusiness",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_countryoforigin",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_dateofincorporation",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_gstavailable",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_industry",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_monthlyincome",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_natureofbusiness",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_officeemailid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_placeofincorporation",
+            "dataType": "String"
+        },
+        {
+            "columnName": "businessdetails_subindustry",
+            "dataType": "String"
+        },
+        {
+            "columnName": "campaignnameothers",
+            "dataType": "String"
+        },
+        {
+            "columnName": "category",
+            "dataType": "String"
+        },
+        {
+            "columnName": "cindetails_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "cindetails_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "cindetails_apimetadata_apistatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "cindetails_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "cindetails_bverified",
+            "dataType": "String"
+        },
+        {
+            "columnName": "cindetails_cinno",
+            "dataType": "String"
+        },
+        {
+            "columnName": "citizenship",
+            "dataType": "String"
+        },
+        {
+            "columnName": "createddate_$date",
+            "dataType": "String"
+        },
+        {
+            "columnName": "customertype",
+            "dataType": "String"
+        },
+        {
+            "columnName": "dateofbirth",
+            "dataType": "String"
+        },
+        {
+            "columnName": "designation",
+            "dataType": "String"
+        },
+        {
+            "columnName": "education",
+            "dataType": "String"
+        },
+        {
+            "columnName": "entitytype",
+            "dataType": "String"
+        },
+        {
+            "columnName": "executivesummary",
+            "dataType": "String"
+        },
+        {
+            "columnName": "externalcustomerid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "fathername_completename",
+            "dataType": "String"
+        },
+        {
+            "columnName": "fathername_firstname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "fathername_lastname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "fathername_middlename",
+            "dataType": "String"
+        },
+        {
+            "columnName": "fathername_prefix",
+            "dataType": "String"
+        },
+        {
+            "columnName": "fathername_suffix",
+            "dataType": "String"
+        },
+        {
+            "columnName": "finnonecustomerid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_aadhaar",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_applicantmobile",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_driving_license",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_electricity_bill",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_gas_bill",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_nrega_job_card",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_office",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_other",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_pan",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_passport",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_personal",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_personal_mobile",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_telephone_bill",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatcustomerparams_voter_id",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_apimetadata_additionalfields_vendor_details_name",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_apimetadata_apistatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_apimetadata_requestid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_issuedate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_kycapplied",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_kycname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_kycnumber",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_kycstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_kycstatuss",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_kycstringname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_licenceclass",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_aadhar_panaadhaarseedingstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_apimetadata_additionalfields_vendor_details_name",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_apimetadata_apistatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_expirydate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_issuedate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_kycapplied",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_kycname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_kycnumber",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_kycstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_kycstatuss",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_kycstringname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_driving_license_licenceclass",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_issuedate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_kycapplied",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_kycname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_kycnumber",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_kycstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_kycstatuss",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_kycstringname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_electricity_bill_licenceclass",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_issuedate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_kycapplied",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_kycname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_kycnumber",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_kycstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_kycstatuss",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_kycstringname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_gas_bill_licenceclass",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_apimetadata_additionalfields_vendor_details_name",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_apimetadata_apistatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_issuedate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_kycapplied",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_kycname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_kycnumber",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_kycstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_kycstatuss",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_kycstringname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_licenceclass",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_pan_panaadhaarseedingstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_apimetadata_additionalfields_vendor_details_name",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_apimetadata_apistatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_expirydate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_issuedate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_kycapplied",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_kycname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_kycnumber",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_kycstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_kycstatuss",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_kycstringname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_licenceclass",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_passport_panaadhaarseedingstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_apimetadata_additionalfields_vendor_details_name",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_apimetadata_apistatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_issuedate",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_kycapplied",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_kycname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_kycnumber",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_kycstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_kycstatuss",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_kycstringname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_licenceclass",
+            "dataType": "String"
+        },
+        {
+            "columnName": "flatkycdetails_voter_id_panaadhaarseedingstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gender",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstavailable",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_apimetadataforgstverification_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_apimetadataforgstverification_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_apimetadataforgstverification_apistatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_apimetadataforgstverification_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_fromdate_$date",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_gstavailable",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_gstexemptionreason",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_gstexmpted",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_gstno",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstdetails_gststatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstexmpted",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gstno",
+            "dataType": "String"
+        },
+        {
+            "columnName": "gststatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "incometobeconsider",
+            "dataType": "String"
+        },
+        {
+            "columnName": "industry",
+            "dataType": "String"
+        },
+        {
+            "columnName": "inoofchildren",
+            "dataType": "String"
+        },
+        {
+            "columnName": "institutionid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "iscoapp",
+            "dataType": "String"
+        },
+        {
+            "columnName": "loaylitycard",
+            "dataType": "String"
+        },
+        {
+            "columnName": "maritalstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "markcontactperson",
+            "dataType": "String"
+        },
+        {
+            "columnName": "mothername_completename",
+            "dataType": "String"
+        },
+        {
+            "columnName": "mothername_firstname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "mothername_lastname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "mothername_middlename",
+            "dataType": "String"
+        },
+        {
+            "columnName": "mothername_prefix",
+            "dataType": "String"
+        },
+        {
+            "columnName": "mothername_suffix",
+            "dataType": "String"
+        },
+        {
+            "columnName": "mothersmaidenname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "nameasaadhar",
+            "dataType": "String"
+        },
+        {
+            "columnName": "natureofbusiness",
+            "dataType": "String"
+        },
+        {
+            "columnName": "nonfinance",
+            "dataType": "String"
+        },
+        {
+            "columnName": "noofdependents",
+            "dataType": "String"
+        },
+        {
+            "columnName": "noofearningmembers",
+            "dataType": "String"
+        },
+        {
+            "columnName": "nooffamilymembers",
+            "dataType": "String"
+        },
+        {
+            "columnName": "occupatontype",
+            "dataType": "String"
+        },
+        {
+            "columnName": "physicalapplnformreq",
+            "dataType": "String"
+        },
+        {
+            "columnName": "physicallyhandicapped",
+            "dataType": "String"
+        },
+        {
+            "columnName": "prefaddrcorr",
+            "dataType": "String"
+        },
+        {
+            "columnName": "prefcommchannel",
+            "dataType": "String"
+        },
+        {
+            "columnName": "preferedlangofcomm",
+            "dataType": "String"
+        },
+        {
+            "columnName": "professionalqualification",
+            "dataType": "String"
+        },
+        {
+            "columnName": "psl",
+            "dataType": "String"
+        },
+        {
+            "columnName": "relationwithapplicant",
+            "dataType": "String"
+        },
+        {
+            "columnName": "religion",
+            "dataType": "String"
+        },
+        {
+            "columnName": "remark",
+            "dataType": "String"
+        },
+        {
+            "columnName": "resaddrsameasapplt",
+            "dataType": "String"
+        },
+        {
+            "columnName": "residenceaddsameasabove",
+            "dataType": "String"
+        },
+        {
+            "columnName": "residentialstatus",
+            "dataType": "String"
+        },
+        {
+            "columnName": "sourcesystem",
+            "dataType": "String"
+        },
+        {
+            "columnName": "spousename_completename",
+            "dataType": "String"
+        },
+        {
+            "columnName": "spousename_firstname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "spousename_lastname",
+            "dataType": "String"
+        },
+        {
+            "columnName": "spousename_middlename",
+            "dataType": "String"
+        },
+        {
+            "columnName": "spousename_prefix",
+            "dataType": "String"
+        },
+        {
+            "columnName": "spousename_suffix",
+            "dataType": "String"
+        },
+        {
+            "columnName": "subconstitution",
+            "dataType": "String"
+        },
+        {
+            "columnName": "subindustry",
+            "dataType": "String"
+        },
+        {
+            "columnName": "tanno",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_apimetadata_ackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_apimetadata_apimsg",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_apimetadata_sslackid",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_isverified",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_niccode",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_subtype",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_typeofenterprise",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_udyamno",
+            "dataType": "String"
+        },
+        {
+            "columnName": "udyamdetails_udyamregistration",
+            "dataType": "String"
+        },
+        {
+            "columnName": "updateddate_$date",
+            "dataType": "String"
+        },
+        {
+            "columnName": "op",
+            "dataType": "String"
+        },
+        {
+            "columnName": "ts_ms",
+            "dataType": "String"
+        }
+    ],
+    "columnMapping": [
+        {
+        "sourceColumn": "_class",
+        "targetColumn": "_class"
+        },
+        {
+            "sourceColumn": "_id",
+            "targetColumn": "_id"
+        },
+        {
+            "sourceColumn": "active",
+            "targetColumn": "active"
+        },
+        {
+            "sourceColumn": "age",
+            "targetColumn": "age"
+        },
+        {
+            "sourceColumn": "applicantname_completename",
+            "targetColumn": "applicantname_completename"
+        },
+        {
+            "sourceColumn": "applicantname_firstname",
+            "targetColumn": "applicantname_firstname"
+        },
+        {
+            "sourceColumn": "applicantname_lastname",
+            "targetColumn": "applicantname_lastname"
+        },
+        {
+            "sourceColumn": "applicantname_middlename",
+            "targetColumn": "applicantname_middlename"
+        },
+        {
+            "sourceColumn": "applicantname_prefix",
+            "targetColumn": "applicantname_prefix"
+        },
+        {
+            "sourceColumn": "applicantname_suffix",
+            "targetColumn": "applicantname_suffix"
+        },
+        {
+            "sourceColumn": "applicanttype",
+            "targetColumn": "applicanttype"
+        },
+        {
+            "sourceColumn": "businessdetails_businessname",
+            "targetColumn": "businessdetails_businessname"
+        },
+        {
+            "sourceColumn": "businessdetails_businessvintage",
+            "targetColumn": "businessdetails_businessvintage"
+        },
+        {
+            "sourceColumn": "businessdetails_commencementdateofbusiness",
+            "targetColumn": "businessdetails_commencementdateofbusiness"
+        },
+        {
+            "sourceColumn": "businessdetails_countryoforigin",
+            "targetColumn": "businessdetails_countryoforigin"
+        },
+        {
+            "sourceColumn": "businessdetails_dateofincorporation",
+            "targetColumn": "businessdetails_dateofincorporation"
+        },
+        {
+            "sourceColumn": "businessdetails_gstavailable",
+            "targetColumn": "businessdetails_gstavailable"
+        },
+        {
+            "sourceColumn": "businessdetails_industry",
+            "targetColumn": "businessdetails_industry"
+        },
+        {
+            "sourceColumn": "businessdetails_monthlyincome",
+            "targetColumn": "businessdetails_monthlyincome"
+        },
+        {
+            "sourceColumn": "businessdetails_natureofbusiness",
+            "targetColumn": "businessdetails_natureofbusiness"
+        },
+        {
+            "sourceColumn": "businessdetails_officeemailid",
+            "targetColumn": "businessdetails_officeemailid"
+        },
+        {
+            "sourceColumn": "businessdetails_placeofincorporation",
+            "targetColumn": "businessdetails_placeofincorporation"
+        },
+        {
+            "sourceColumn": "businessdetails_subindustry",
+            "targetColumn": "businessdetails_subindustry"
+        },
+        {
+            "sourceColumn": "campaignnameothers",
+            "targetColumn": "campaignnameothers"
+        },
+        {
+            "sourceColumn": "category",
+            "targetColumn": "category"
+        },
+        {
+            "sourceColumn": "cindetails_apimetadata_ackid",
+            "targetColumn": "cindetails_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "cindetails_apimetadata_apimsg",
+            "targetColumn": "cindetails_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "cindetails_apimetadata_apistatus",
+            "targetColumn": "cindetails_apimetadata_apistatus"
+        },
+        {
+            "sourceColumn": "cindetails_apimetadata_sslackid",
+            "targetColumn": "cindetails_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "cindetails_bverified",
+            "targetColumn": "cindetails_bverified"
+        },
+        {
+            "sourceColumn": "cindetails_cinno",
+            "targetColumn": "cindetails_cinno"
+        },
+        {
+            "sourceColumn": "citizenship",
+            "targetColumn": "citizenship"
+        },
+        {
+            "sourceColumn": "createddate_$date",
+            "targetColumn": "createddate_$date"
+        },
+        {
+            "sourceColumn": "customertype",
+            "targetColumn": "customertype"
+        },
+        {
+            "sourceColumn": "dateofbirth",
+            "targetColumn": "dateofbirth"
+        },
+        {
+            "sourceColumn": "designation",
+            "targetColumn": "designation"
+        },
+        {
+            "sourceColumn": "education",
+            "targetColumn": "education"
+        },
+        {
+            "sourceColumn": "entitytype",
+            "targetColumn": "entitytype"
+        },
+        {
+            "sourceColumn": "executivesummary",
+            "targetColumn": "executivesummary"
+        },
+        {
+            "sourceColumn": "externalcustomerid",
+            "targetColumn": "externalcustomerid"
+        },
+        {
+            "sourceColumn": "fathername_completename",
+            "targetColumn": "fathername_completename"
+        },
+        {
+            "sourceColumn": "fathername_firstname",
+            "targetColumn": "fathername_firstname"
+        },
+        {
+            "sourceColumn": "fathername_lastname",
+            "targetColumn": "fathername_lastname"
+        },
+        {
+            "sourceColumn": "fathername_middlename",
+            "targetColumn": "fathername_middlename"
+        },
+        {
+            "sourceColumn": "fathername_prefix",
+            "targetColumn": "fathername_prefix"
+        },
+        {
+            "sourceColumn": "fathername_suffix",
+            "targetColumn": "fathername_suffix"
+        },
+        {
+            "sourceColumn": "finnonecustomerid",
+            "targetColumn": "finnonecustomerid"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_aadhaar",
+            "targetColumn": "flatcustomerparams_aadhaar"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_applicantmobile",
+            "targetColumn": "flatcustomerparams_applicantmobile"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_driving_license",
+            "targetColumn": "flatcustomerparams_driving_license"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_electricity_bill",
+            "targetColumn": "flatcustomerparams_electricity_bill"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_gas_bill",
+            "targetColumn": "flatcustomerparams_gas_bill"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_nrega_job_card",
+            "targetColumn": "flatcustomerparams_nrega_job_card"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_office",
+            "targetColumn": "flatcustomerparams_office"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_other",
+            "targetColumn": "flatcustomerparams_other"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_pan",
+            "targetColumn": "flatcustomerparams_pan"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_passport",
+            "targetColumn": "flatcustomerparams_passport"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_personal",
+            "targetColumn": "flatcustomerparams_personal"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_personal_mobile",
+            "targetColumn": "flatcustomerparams_personal_mobile"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_telephone_bill",
+            "targetColumn": "flatcustomerparams_telephone_bill"
+        },
+        {
+            "sourceColumn": "flatcustomerparams_voter_id",
+            "targetColumn": "flatcustomerparams_voter_id"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_apimetadata_ackid",
+            "targetColumn": "flatkycdetails_aadhar_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_apimetadata_additionalfields_vendor_details_name",
+            "targetColumn": "flatkycdetails_aadhar_apimetadata_additionalfields_vendor_details_name"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_apimetadata_apimsg",
+            "targetColumn": "flatkycdetails_aadhar_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_apimetadata_apistatus",
+            "targetColumn": "flatkycdetails_aadhar_apimetadata_apistatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_apimetadata_requestid",
+            "targetColumn": "flatkycdetails_aadhar_apimetadata_requestid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_apimetadata_sslackid",
+            "targetColumn": "flatkycdetails_aadhar_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_issuedate",
+            "targetColumn": "flatkycdetails_aadhar_issuedate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_kycapplied",
+            "targetColumn": "flatkycdetails_aadhar_kycapplied"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_kycname",
+            "targetColumn": "flatkycdetails_aadhar_kycname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_kycnumber",
+            "targetColumn": "flatkycdetails_aadhar_kycnumber"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_kycstatus",
+            "targetColumn": "flatkycdetails_aadhar_kycstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_kycstatuss",
+            "targetColumn": "flatkycdetails_aadhar_kycstatuss"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_kycstringname",
+            "targetColumn": "flatkycdetails_aadhar_kycstringname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_licenceclass",
+            "targetColumn": "flatkycdetails_aadhar_licenceclass"
+        },
+        {
+            "sourceColumn": "flatkycdetails_aadhar_panaadhaarseedingstatus",
+            "targetColumn": "flatkycdetails_aadhar_panaadhaarseedingstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_apimetadata_ackid",
+            "targetColumn": "flatkycdetails_driving_license_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_apimetadata_additionalfields_vendor_details_name",
+            "targetColumn": "flatkycdetails_driving_license_apimetadata_additionalfields_vendor_details_name"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_apimetadata_apimsg",
+            "targetColumn": "flatkycdetails_driving_license_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_apimetadata_apistatus",
+            "targetColumn": "flatkycdetails_driving_license_apimetadata_apistatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_apimetadata_sslackid",
+            "targetColumn": "flatkycdetails_driving_license_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_expirydate",
+            "targetColumn": "flatkycdetails_driving_license_expirydate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_issuedate",
+            "targetColumn": "flatkycdetails_driving_license_issuedate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_kycapplied",
+            "targetColumn": "flatkycdetails_driving_license_kycapplied"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_kycname",
+            "targetColumn": "flatkycdetails_driving_license_kycname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_kycnumber",
+            "targetColumn": "flatkycdetails_driving_license_kycnumber"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_kycstatus",
+            "targetColumn": "flatkycdetails_driving_license_kycstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_kycstatuss",
+            "targetColumn": "flatkycdetails_driving_license_kycstatuss"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_kycstringname",
+            "targetColumn": "flatkycdetails_driving_license_kycstringname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_driving_license_licenceclass",
+            "targetColumn": "flatkycdetails_driving_license_licenceclass"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_apimetadata_ackid",
+            "targetColumn": "flatkycdetails_electricity_bill_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_apimetadata_apimsg",
+            "targetColumn": "flatkycdetails_electricity_bill_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_apimetadata_sslackid",
+            "targetColumn": "flatkycdetails_electricity_bill_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_issuedate",
+            "targetColumn": "flatkycdetails_electricity_bill_issuedate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_kycapplied",
+            "targetColumn": "flatkycdetails_electricity_bill_kycapplied"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_kycname",
+            "targetColumn": "flatkycdetails_electricity_bill_kycname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_kycnumber",
+            "targetColumn": "flatkycdetails_electricity_bill_kycnumber"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_kycstatus",
+            "targetColumn": "flatkycdetails_electricity_bill_kycstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_kycstatuss",
+            "targetColumn": "flatkycdetails_electricity_bill_kycstatuss"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_kycstringname",
+            "targetColumn": "flatkycdetails_electricity_bill_kycstringname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_electricity_bill_licenceclass",
+            "targetColumn": "flatkycdetails_electricity_bill_licenceclass"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_apimetadata_ackid",
+            "targetColumn": "flatkycdetails_gas_bill_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_apimetadata_apimsg",
+            "targetColumn": "flatkycdetails_gas_bill_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_apimetadata_sslackid",
+            "targetColumn": "flatkycdetails_gas_bill_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_issuedate",
+            "targetColumn": "flatkycdetails_gas_bill_issuedate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_kycapplied",
+            "targetColumn": "flatkycdetails_gas_bill_kycapplied"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_kycname",
+            "targetColumn": "flatkycdetails_gas_bill_kycname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_kycnumber",
+            "targetColumn": "flatkycdetails_gas_bill_kycnumber"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_kycstatus",
+            "targetColumn": "flatkycdetails_gas_bill_kycstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_kycstatuss",
+            "targetColumn": "flatkycdetails_gas_bill_kycstatuss"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_kycstringname",
+            "targetColumn": "flatkycdetails_gas_bill_kycstringname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_gas_bill_licenceclass",
+            "targetColumn": "flatkycdetails_gas_bill_licenceclass"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_apimetadata_ackid",
+            "targetColumn": "flatkycdetails_pan_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_apimetadata_additionalfields_vendor_details_name",
+            "targetColumn": "flatkycdetails_pan_apimetadata_additionalfields_vendor_details_name"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_apimetadata_apimsg",
+            "targetColumn": "flatkycdetails_pan_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_apimetadata_apistatus",
+            "targetColumn": "flatkycdetails_pan_apimetadata_apistatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_apimetadata_sslackid",
+            "targetColumn": "flatkycdetails_pan_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_issuedate",
+            "targetColumn": "flatkycdetails_pan_issuedate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_kycapplied",
+            "targetColumn": "flatkycdetails_pan_kycapplied"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_kycname",
+            "targetColumn": "flatkycdetails_pan_kycname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_kycnumber",
+            "targetColumn": "flatkycdetails_pan_kycnumber"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_kycstatus",
+            "targetColumn": "flatkycdetails_pan_kycstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_kycstatuss",
+            "targetColumn": "flatkycdetails_pan_kycstatuss"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_kycstringname",
+            "targetColumn": "flatkycdetails_pan_kycstringname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_licenceclass",
+            "targetColumn": "flatkycdetails_pan_licenceclass"
+        },
+        {
+            "sourceColumn": "flatkycdetails_pan_panaadhaarseedingstatus",
+            "targetColumn": "flatkycdetails_pan_panaadhaarseedingstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_apimetadata_ackid",
+            "targetColumn": "flatkycdetails_passport_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_apimetadata_additionalfields_vendor_details_name",
+            "targetColumn": "flatkycdetails_passport_apimetadata_additionalfields_vendor_details_name"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_apimetadata_apimsg",
+            "targetColumn": "flatkycdetails_passport_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_apimetadata_apistatus",
+            "targetColumn": "flatkycdetails_passport_apimetadata_apistatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_apimetadata_sslackid",
+            "targetColumn": "flatkycdetails_passport_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_expirydate",
+            "targetColumn": "flatkycdetails_passport_expirydate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_issuedate",
+            "targetColumn": "flatkycdetails_passport_issuedate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_kycapplied",
+            "targetColumn": "flatkycdetails_passport_kycapplied"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_kycname",
+            "targetColumn": "flatkycdetails_passport_kycname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_kycnumber",
+            "targetColumn": "flatkycdetails_passport_kycnumber"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_kycstatus",
+            "targetColumn": "flatkycdetails_passport_kycstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_kycstatuss",
+            "targetColumn": "flatkycdetails_passport_kycstatuss"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_kycstringname",
+            "targetColumn": "flatkycdetails_passport_kycstringname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_licenceclass",
+            "targetColumn": "flatkycdetails_passport_licenceclass"
+        },
+        {
+            "sourceColumn": "flatkycdetails_passport_panaadhaarseedingstatus",
+            "targetColumn": "flatkycdetails_passport_panaadhaarseedingstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_apimetadata_ackid",
+            "targetColumn": "flatkycdetails_voter_id_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_apimetadata_additionalfields_vendor_details_name",
+            "targetColumn": "flatkycdetails_voter_id_apimetadata_additionalfields_vendor_details_name"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_apimetadata_apimsg",
+            "targetColumn": "flatkycdetails_voter_id_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_apimetadata_apistatus",
+            "targetColumn": "flatkycdetails_voter_id_apimetadata_apistatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_apimetadata_sslackid",
+            "targetColumn": "flatkycdetails_voter_id_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_issuedate",
+            "targetColumn": "flatkycdetails_voter_id_issuedate"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_kycapplied",
+            "targetColumn": "flatkycdetails_voter_id_kycapplied"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_kycname",
+            "targetColumn": "flatkycdetails_voter_id_kycname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_kycnumber",
+            "targetColumn": "flatkycdetails_voter_id_kycnumber"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_kycstatus",
+            "targetColumn": "flatkycdetails_voter_id_kycstatus"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_kycstatuss",
+            "targetColumn": "flatkycdetails_voter_id_kycstatuss"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_kycstringname",
+            "targetColumn": "flatkycdetails_voter_id_kycstringname"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_licenceclass",
+            "targetColumn": "flatkycdetails_voter_id_licenceclass"
+        },
+        {
+            "sourceColumn": "flatkycdetails_voter_id_panaadhaarseedingstatus",
+            "targetColumn": "flatkycdetails_voter_id_panaadhaarseedingstatus"
+        },
+        {
+            "sourceColumn": "gender",
+            "targetColumn": "gender"
+        },
+        {
+            "sourceColumn": "gstavailable",
+            "targetColumn": "gstavailable"
+        },
+        {
+            "sourceColumn": "gstdetails_apimetadata_ackid",
+            "targetColumn": "gstdetails_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "gstdetails_apimetadata_apimsg",
+            "targetColumn": "gstdetails_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "gstdetails_apimetadata_sslackid",
+            "targetColumn": "gstdetails_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "gstdetails_apimetadataforgstverification_ackid",
+            "targetColumn": "gstdetails_apimetadataforgstverification_ackid"
+        },
+        {
+            "sourceColumn": "gstdetails_apimetadataforgstverification_apimsg",
+            "targetColumn": "gstdetails_apimetadataforgstverification_apimsg"
+        },
+        {
+            "sourceColumn": "gstdetails_apimetadataforgstverification_apistatus",
+            "targetColumn": "gstdetails_apimetadataforgstverification_apistatus"
+        },
+        {
+            "sourceColumn": "gstdetails_apimetadataforgstverification_sslackid",
+            "targetColumn": "gstdetails_apimetadataforgstverification_sslackid"
+        },
+        {
+            "sourceColumn": "gstdetails_fromdate_$date",
+            "targetColumn": "gstdetails_fromdate_$date"
+        },
+        {
+            "sourceColumn": "gstdetails_gstavailable",
+            "targetColumn": "gstdetails_gstavailable"
+        },
+        {
+            "sourceColumn": "gstdetails_gstexemptionreason",
+            "targetColumn": "gstdetails_gstexemptionreason"
+        },
+        {
+            "sourceColumn": "gstdetails_gstexmpted",
+            "targetColumn": "gstdetails_gstexmpted"
+        },
+        {
+            "sourceColumn": "gstdetails_gstno",
+            "targetColumn": "gstdetails_gstno"
+        },
+        {
+            "sourceColumn": "gstdetails_gststatus",
+            "targetColumn": "gstdetails_gststatus"
+        },
+        {
+            "sourceColumn": "gstexmpted",
+            "targetColumn": "gstexmpted"
+        },
+        {
+            "sourceColumn": "gstno",
+            "targetColumn": "gstno"
+        },
+        {
+            "sourceColumn": "gststatus",
+            "targetColumn": "gststatus"
+        },
+        {
+            "sourceColumn": "incometobeconsider",
+            "targetColumn": "incometobeconsider"
+        },
+        {
+            "sourceColumn": "industry",
+            "targetColumn": "industry"
+        },
+        {
+            "sourceColumn": "inoofchildren",
+            "targetColumn": "inoofchildren"
+        },
+        {
+            "sourceColumn": "institutionid",
+            "targetColumn": "institutionid"
+        },
+        {
+            "sourceColumn": "iscoapp",
+            "targetColumn": "iscoapp"
+        },
+        {
+            "sourceColumn": "loaylitycard",
+            "targetColumn": "loaylitycard"
+        },
+        {
+            "sourceColumn": "maritalstatus",
+            "targetColumn": "maritalstatus"
+        },
+        {
+            "sourceColumn": "markcontactperson",
+            "targetColumn": "markcontactperson"
+        },
+        {
+            "sourceColumn": "mothername_completename",
+            "targetColumn": "mothername_completename"
+        },
+        {
+            "sourceColumn": "mothername_firstname",
+            "targetColumn": "mothername_firstname"
+        },
+        {
+            "sourceColumn": "mothername_lastname",
+            "targetColumn": "mothername_lastname"
+        },
+        {
+            "sourceColumn": "mothername_middlename",
+            "targetColumn": "mothername_middlename"
+        },
+        {
+            "sourceColumn": "mothername_prefix",
+            "targetColumn": "mothername_prefix"
+        },
+        {
+            "sourceColumn": "mothername_suffix",
+            "targetColumn": "mothername_suffix"
+        },
+        {
+            "sourceColumn": "mothersmaidenname",
+            "targetColumn": "mothersmaidenname"
+        },
+        {
+            "sourceColumn": "nameasaadhar",
+            "targetColumn": "nameasaadhar"
+        },
+        {
+            "sourceColumn": "natureofbusiness",
+            "targetColumn": "natureofbusiness"
+        },
+        {
+            "sourceColumn": "nonfinance",
+            "targetColumn": "nonfinance"
+        },
+        {
+            "sourceColumn": "noofdependents",
+            "targetColumn": "noofdependents"
+        },
+        {
+            "sourceColumn": "noofearningmembers",
+            "targetColumn": "noofearningmembers"
+        },
+        {
+            "sourceColumn": "nooffamilymembers",
+            "targetColumn": "nooffamilymembers"
+        },
+        {
+            "sourceColumn": "occupatontype",
+            "targetColumn": "occupatontype"
+        },
+        {
+            "sourceColumn": "physicalapplnformreq",
+            "targetColumn": "physicalapplnformreq"
+        },
+        {
+            "sourceColumn": "physicallyhandicapped",
+            "targetColumn": "physicallyhandicapped"
+        },
+        {
+            "sourceColumn": "prefaddrcorr",
+            "targetColumn": "prefaddrcorr"
+        },
+        {
+            "sourceColumn": "prefcommchannel",
+            "targetColumn": "prefcommchannel"
+        },
+        {
+            "sourceColumn": "preferedlangofcomm",
+            "targetColumn": "preferedlangofcomm"
+        },
+        {
+            "sourceColumn": "professionalqualification",
+            "targetColumn": "professionalqualification"
+        },
+        {
+            "sourceColumn": "psl",
+            "targetColumn": "psl"
+        },
+        {
+            "sourceColumn": "relationwithapplicant",
+            "targetColumn": "relationwithapplicant"
+        },
+        {
+            "sourceColumn": "religion",
+            "targetColumn": "religion"
+        },
+        {
+            "sourceColumn": "remark",
+            "targetColumn": "remark"
+        },
+        {
+            "sourceColumn": "resaddrsameasapplt",
+            "targetColumn": "resaddrsameasapplt"
+        },
+        {
+            "sourceColumn": "residenceaddsameasabove",
+            "targetColumn": "residenceaddsameasabove"
+        },
+        {
+            "sourceColumn": "residentialstatus",
+            "targetColumn": "residentialstatus"
+        },
+        {
+            "sourceColumn": "sourcesystem",
+            "targetColumn": "sourcesystem"
+        },
+        {
+            "sourceColumn": "spousename_completename",
+            "targetColumn": "spousename_completename"
+        },
+        {
+            "sourceColumn": "spousename_firstname",
+            "targetColumn": "spousename_firstname"
+        },
+        {
+            "sourceColumn": "spousename_lastname",
+            "targetColumn": "spousename_lastname"
+        },
+        {
+            "sourceColumn": "spousename_middlename",
+            "targetColumn": "spousename_middlename"
+        },
+        {
+            "sourceColumn": "spousename_prefix",
+            "targetColumn": "spousename_prefix"
+        },
+        {
+            "sourceColumn": "spousename_suffix",
+            "targetColumn": "spousename_suffix"
+        },
+        {
+            "sourceColumn": "subconstitution",
+            "targetColumn": "subconstitution"
+        },
+        {
+            "sourceColumn": "subindustry",
+            "targetColumn": "subindustry"
+        },
+        {
+            "sourceColumn": "tanno",
+            "targetColumn": "tanno"
+        },
+        {
+            "sourceColumn": "udyamdetails_apimetadata_ackid",
+            "targetColumn": "udyamdetails_apimetadata_ackid"
+        },
+        {
+            "sourceColumn": "udyamdetails_apimetadata_apimsg",
+            "targetColumn": "udyamdetails_apimetadata_apimsg"
+        },
+        {
+            "sourceColumn": "udyamdetails_apimetadata_sslackid",
+            "targetColumn": "udyamdetails_apimetadata_sslackid"
+        },
+        {
+            "sourceColumn": "udyamdetails_isverified",
+            "targetColumn": "udyamdetails_isverified"
+        },
+        {
+            "sourceColumn": "udyamdetails_niccode",
+            "targetColumn": "udyamdetails_niccode"
+        },
+        {
+            "sourceColumn": "udyamdetails_subtype",
+            "targetColumn": "udyamdetails_subtype"
+        },
+        {
+            "sourceColumn": "udyamdetails_typeofenterprise",
+            "targetColumn": "udyamdetails_typeofenterprise"
+        },
+        {
+            "sourceColumn": "udyamdetails_udyamno",
+            "targetColumn": "udyamdetails_udyamno"
+        },
+        {
+            "sourceColumn": "udyamdetails_udyamregistration",
+            "targetColumn": "udyamdetails_udyamregistration"
+        },
+        {
+            "sourceColumn": "updateddate_$date",
+            "targetColumn": "updateddate_$date"
+        },
+        {
+            "sourceColumn": "op",
+            "targetColumn": "op"
+        },
+        {
+            "sourceColumn": "ts_ms",
+            "targetColumn": "ts_ms"
+        }
+    ],
+    "storageDetails": [
+        {
+            "recordType": "valid-records",
+            "dataFormat": "parquet",
+            "fileSystem": "s3",
+            "pathUrl": "s3a://sample/job-data/entity_store/input",
+            "storageHandler": "PersistHadoopFS"
+        }
+    ]
+}
